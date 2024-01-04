@@ -34,10 +34,14 @@ void loop() {
     }
 
     // every other character turns of all the LEDs
-    if ((incomingByte > 40 && incomingByte < 91) || (incomingByte > 101 && incomingByte < 123)){
+    if ((incomingByte > 47 && incomingByte < 91) || (incomingByte > 101 && incomingByte < 123)){
       for (int i = 2; i <= 6; i++){
           digitalWrite(i, LOW);
         }
     }
   }
 }
+
+
+
+
