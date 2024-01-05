@@ -17,7 +17,7 @@ void setup() {
 }
 
 void loop() {
-  if (counter_s < 10) { // stop playing the game after 10 succeses
+  if (counter_s < 10) {  // stop playing the game after 10 succeses
     // Sets the speed of the game (the speed of the LEDs)
     I += 1;
     if (I == 10000 - (counter_s * 750)) {
@@ -44,7 +44,7 @@ void loop() {
       digitalWrite(12, LOW);
       digitalWrite(13, LOW);
       delay(1000);
-    // button pressed on the right time
+      // button pressed on the right time
     } else if (x == 2 && Button == 0) {
       counter_s += 1;
       Serial.println("Succes");
@@ -66,7 +66,7 @@ void loop() {
         digitalWrite(13, LOW);
         delay(200);
       }
-      // reset cycle 
+      // reset cycle
       x = 0;
       I = 0;
     }
@@ -74,7 +74,7 @@ void loop() {
     // LEDs flash randomly when 8 succeses have been made
     if (counter_s == 8 && dance == 0) {
       for (int i = 0; i <= 14; i++) {
-        int ran = random(9, 14); // random port between 9-13
+        int ran = random(9, 14);  // random port between 9-13
         digitalWrite(ran, HIGH);
         delay(100);
         digitalWrite(ran, LOW);
@@ -84,7 +84,7 @@ void loop() {
       delay(500);
     }
 
-    digitalWrite(9 + x, LOW); // turns the LED in the cycle off
+    digitalWrite(9 + x, LOW);  // turns the LED in the cycle off
 
     // end of game
     if (counter_s == 10) {
