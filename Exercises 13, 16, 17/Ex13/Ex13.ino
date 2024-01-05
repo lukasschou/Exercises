@@ -1,9 +1,9 @@
 bool Button;
-int I = 0;
-int x = 0;
-int counter_s = 0;
-int counter_f = 0;
-int dance = 0;
+int I = 0;  // counts the number of loops made
+int x = 0;  // counts the LED that should be on
+int counter_s = 0;  // count the number of succeses
+int counter_f = 0;  // count the number of misses
+int dance = 0;  // variable to make sure LED flash is only made ones
 
 void setup() {
   pinMode(2, INPUT);
