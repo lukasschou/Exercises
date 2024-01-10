@@ -6,10 +6,10 @@ const char* pass = "11111111";
 
 WiFiClient client;
 
-unsigned long channelID = 2397414;        //your TS channal
-const char* APIKey = "7AK685PVDZJP7CLW";  //your TS API
+unsigned long channelID = 2397610;        //your TS channal
+const char* APIKey = "0BS644K2B0YXL7I5";  //your TS API
 const char* server = "api.thingspeak.com";
-const int postDelay = 1 * 1000;  //post data every 20 seconds
+const int postDelay = 10 * 1000;  //post data every 20 seconds
 
 void setup() {
   Serial.begin(115200);
